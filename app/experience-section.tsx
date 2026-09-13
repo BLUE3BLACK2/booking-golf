@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import CarouselArrow from "./carousel-arrow";
 
 const experiences = [
   { title: "Championship Course", category: "The course", description: "Play across sculpted fairways, strategic bunkers, and greens designed to reward every thoughtful shot.", image: "/course-scenery.png", alt: "Championship golf course in warm evening light" },
@@ -20,7 +21,7 @@ export default function ExperienceSection() {
   return <section className="experience-section" id="amenities" aria-labelledby="experience-title">
     <div className="experience-heading">
       <h2 id="experience-title">Experience More<br />Than Just Golf</h2>
-      <div className="experience-controls" aria-label="Browse experiences"><button type="button" onClick={() => step(-1)} aria-label="Previous experience">←</button><button type="button" onClick={() => step(1)} aria-label="Next experience">→</button></div>
+      <div className="experience-controls" aria-label="Browse experiences"><button type="button" onClick={() => step(-1)} aria-label="Previous experience"><CarouselArrow direction="left" /></button><button type="button" onClick={() => step(1)} aria-label="Next experience"><CarouselArrow direction="right" /></button></div>
     </div>
     <div className="experience-showcase">
       <article className="spotlight-card" aria-live="polite">

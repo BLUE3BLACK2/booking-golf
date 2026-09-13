@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import CarouselArrow from "./carousel-arrow";
 
 const features = [
   {
@@ -33,10 +34,6 @@ const features = [
     alt: "A golfer completing a drive on a pristine fairway",
   },
 ] as const;
-
-function Arrow({ direction }: { direction: "left" | "right" }) {
-  return <svg aria-hidden="true" viewBox="0 0 24 24"><path d={direction === "left" ? "m15 18-6-6 6-6M9 12h11" : "m9 18 6-6-6-6M4 12h11"} /></svg>;
-}
 
 export default function CourseFeatures() {
   const [active, setActive] = useState(0);
@@ -71,8 +68,8 @@ export default function CourseFeatures() {
 
       <aside className="feature-side" aria-label="Carousel controls">
         <div className="feature-arrows">
-          <button type="button" onClick={() => setActive(previous)} aria-label="Previous feature"><Arrow direction="left" /></button>
-          <button type="button" onClick={() => setActive(next)} aria-label="Next feature"><Arrow direction="right" /></button>
+          <button type="button" onClick={() => setActive(previous)} aria-label="Previous feature"><CarouselArrow direction="left" /></button>
+          <button type="button" onClick={() => setActive(next)} aria-label="Next feature"><CarouselArrow direction="right" /></button>
         </div>
         <button className="feature-preview" type="button" onClick={() => setActive(next)} aria-label={`Preview ${features[next].label}`}>
           <Image src={features[next].image} alt="" fill sizes="160px" />
