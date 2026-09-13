@@ -7,19 +7,19 @@ export default function BrandLogo({ className = "" }: BrandLogoProps) {
     <span className={`brand-logo ${className}`.trim()}>
       <svg
         className="brand-symbol"
-        viewBox="0 0 44 44"
+        viewBox="0 0 48 48"
         aria-hidden="true"
       >
-        <path className="brand-symbol__flag" d="M21.5 7.5v23.2" />
-        <path className="brand-symbol__flag" d="M22 8.5h12l-3.6 5 3.6 5H22" />
-        <circle className="brand-symbol__ball" cx="16" cy="30" r="9.5" />
-        <circle className="brand-symbol__dimple" cx="12.7" cy="27" r="1" />
-        <circle className="brand-symbol__dimple" cx="17.7" cy="26" r="1" />
-        <circle className="brand-symbol__dimple" cx="14.8" cy="32" r="1" />
-        <circle className="brand-symbol__dimple" cx="19.3" cy="31" r="1" />
-        <path className="brand-symbol__ground" d="M7 39c8.2-3 16.4-3 24.6 0" />
+        <path
+          className="brand-symbol__shell"
+          d="M24 3.5c11.1 0 19.5 8.8 19.5 20V43H4.5V23.5c0-11.2 8.4-20 19.5-20Z"
+        />
+        <circle className="brand-symbol__sun" cx="35" cy="13" r="4" />
+        <path className="brand-symbol__roof" d="m10.5 24 13.5-12 13.5 12" />
+        <path className="brand-symbol__monogram" d="m13.5 23 10.5 14 10.5-14" />
+        <path className="brand-symbol__horizon" d="M10 40h28" />
       </svg>
-      <span className="brand-wordmark">Golfiers</span>
+      <span className="brand-wordmark"><strong>Veyra</strong> Villas</span>
     </span>
   );
 }

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Golfiers — Tee Off in Perfect Surroundings",
-  description: "Premium golf courses, world-class facilities, and unforgettable surroundings.",
+  title: "Veyra Villas — Private Stays, Beautifully Secluded",
+  description: "Private tropical villas, thoughtful hospitality, and effortless stays in beautiful surroundings.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

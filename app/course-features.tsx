@@ -6,32 +6,32 @@ import CarouselArrow from "./carousel-arrow";
 
 const features = [
   {
-    label: "Precision",
-    title: <>18 Masterfully<br />Designed Holes</>,
-    description: "Challenge yourself on our 18 expertly designed holes. Each hole offers a unique test of skill and strategy, crafted to provide a perfect balance of challenge and enjoyment for all players.",
-    image: "/course-precision.png",
-    alt: "Two golf balls resting beside a vivid flagstick in the cup",
+    label: "Sanctuary",
+    title: <>Private Villas,<br />Made to Exhale</>,
+    description: "Retreat into generous indoor-outdoor living, a private infinity pool, and uninterrupted valley views. Every villa is designed to feel secluded, calm, and entirely yours.",
+    image: "/villa-hero.png",
+    alt: "Tropical private villa with an infinity pool at sunrise",
   },
   {
-    label: "Practice",
-    title: <>Practice With<br />Real Purpose</>,
-    description: "Sharpen every part of your game in thoughtful practice areas designed for focused sessions, from confident drives to a steadier touch around the green.",
-    image: "/golf-hero.png",
-    alt: "Golf balls and a putter on a sunlit course",
+    label: "Suites",
+    title: <>Wake Up to<br />Quiet Luxury</>,
+    description: "Natural textures, cloud-soft linens, and wide openings to the garden turn every suite into a restful private retreat from morning to night.",
+    image: "/villa-suite.png",
+    alt: "Luxury villa bedroom beside a private tropical pool",
   },
   {
-    label: "Scenery",
-    title: <>Play Among<br />Stunning Views</>,
-    description: "Take in sweeping fairways, sculpted greens, and a beautiful natural setting. Every round unfolds through scenery made to be remembered.",
-    image: "/course-scenery.png",
-    alt: "A sculpted golf green and white bunkers at golden hour",
+    label: "Setting",
+    title: <>Live Among<br />Remarkable Views</>,
+    description: "Look out across jungle valleys and distant hills from spaces that dissolve the boundary between refined interiors and tropical nature.",
+    image: "/villa-hero.png",
+    alt: "Infinity pool overlooking a lush tropical valley",
   },
   {
-    label: "Comfort",
-    title: <>Comfort From<br />Tee to Green</>,
-    description: "Move through your round at an easy pace with welcoming facilities, immaculate playing surfaces, and attentive details throughout the course.",
-    image: "/course-player.png",
-    alt: "A golfer completing a drive on a pristine fairway",
+    label: "Service",
+    title: <>Every Detail,<br />Already Arranged</>,
+    description: "From private transfers and breakfast to in-villa dining and local discoveries, our hosts make each day feel beautifully effortless.",
+    image: "/villa-arrival.png",
+    alt: "Couple arriving at a secluded luxury villa",
   },
 ] as const;
 
@@ -42,9 +42,9 @@ export default function CourseFeatures() {
   const next = (active + 1) % features.length;
 
   return (
-    <section className="features-section" id="features" aria-labelledby="features-title">
+    <section className="features-section" id="features" aria-labelledby="features-title" data-reveal>
       <div className="features-copy">
-        <div className="feature-tabs" role="tablist" aria-label="Course features">
+        <div className="feature-tabs" role="tablist" aria-label="Villa features">
           {features.map((feature, index) => (
             <button key={feature.label} type="button" role="tab" aria-selected={active === index} className={active === index ? "active" : ""} onClick={() => setActive(index)}>
               {feature.label}

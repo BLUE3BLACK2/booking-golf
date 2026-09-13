@@ -2,27 +2,27 @@ import Image from "next/image";
 
 export default function TestimonialsSection() {
   return (
-    <section className="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+    <section className="testimonials-section" id="testimonials" aria-labelledby="testimonials-title" data-reveal>
       <div className="testimonial-words">
-        <p>Impressive</p>
-        <h2 id="testimonials-title"><span>Unforgettable</span><span>Experience</span></h2>
-        <p>Relaxing</p>
-        <p>Professional</p>
+        <p>Secluded</p>
+        <h2 id="testimonials-title"><span>Unforgettable</span><span>Escapes</span></h2>
+        <p>Restorative</p>
+        <p>Personal</p>
       </div>
       <div className="testimonial-content">
         <p className="testimonial-kicker">Testimonials</p>
         <div className="testimonial-media-row">
-          <div className="testimonial-photo"><Image src="/course-scenery.png" alt="Flag on a pristine golf green overlooking the course" fill sizes="(max-width: 760px) 66vw, 360px" /></div>
-          <div className="testimonial-rating" aria-label="153 thousand reviews, rated 4.9 out of 5">
-            <strong>153K</strong>
+          <div className="testimonial-photo"><Image src="/villa-hero.png" alt="Infinity pool overlooking a tropical valley at sunrise" fill sizes="(max-width: 760px) 66vw, 360px" /></div>
+          <div className="testimonial-rating" aria-label="More than 1.8 thousand guest reviews, rated 4.9 out of 5">
+            <strong>1.8K</strong>
             <div><span aria-hidden="true">★★★★★</span><small>4.9</small></div>
           </div>
         </div>
         <blockquote>
-          <p>“The course is pristine, and the views are stunning! Booking was so easy, and the staff made us feel welcome from the moment we arrived. I can’t wait to come back.”</p>
+          <p>“The villa felt completely private, the views were extraordinary, and every detail had already been considered. We arrived tired and left feeling entirely restored.”</p>
           <footer>
-            <span className="testimonial-avatar"><Image src="/course-player.png" alt="" fill sizes="46px" /></span>
-            <span><strong>Miguel Haze</strong><small>Texas</small></span>
+            <span className="testimonial-avatar"><Image src="/villa-arrival.png" alt="" fill sizes="46px" /></span>
+            <span><strong>Amelia Hart</strong><small>Singapore</small></span>
           </footer>
         </blockquote>
       </div>
